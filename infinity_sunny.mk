@@ -11,12 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sunny device
 $(call inherit-product, device/xiaomi/sunny/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+# Inherit some common Project InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := custom_sunny
+PRODUCT_NAME := infinity_sunny
 PRODUCT_DEVICE := sunny
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2101K7AG
@@ -27,3 +27,19 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=$(PRODUCT_SYSTEM_NAME)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Maintainer Name
+INFINITY_MAINTAINER := "Viaan Thakur"
+
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := false
+
+# Whether Including Google Apps
+WITH_GAPPS := true
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.marketname=Redmi Note 10 (sunny) \
+    ro.infinity.soc=Qualcomm Snapdragon 678 \
+    ro.infinity.battery=5000 mAh \
+    ro.infinity.display=1080 x 2400, 60 Hz \
+    ro.infinity.camera=48MP + 8MP + 2MP + 2MP + 13MP
