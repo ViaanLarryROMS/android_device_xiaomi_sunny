@@ -13,6 +13,10 @@ $(call inherit-product, device/xiaomi/sunny/device.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+#Inherit Some GAPPS Stuff
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
