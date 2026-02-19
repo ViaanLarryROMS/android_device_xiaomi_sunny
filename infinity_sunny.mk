@@ -29,7 +29,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Maintainer Name
-INFINITY_MAINTAINER := "Viaan Thakur"
+INFINITY_MAINTAINER := "Viaan_Thakur"
 
 # Whether the device supports Fingerprint On Display
 TARGET_HAS_UDFPS := false
@@ -38,8 +38,8 @@ TARGET_HAS_UDFPS := false
 WITH_GAPPS := true
 
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.product.marketname=Redmi Note 10 (sunny) \
-    ro.infinity.soc=Qualcomm Snapdragon 678 \
-    ro.infinity.battery=5000 mAh \
-    ro.infinity.display=1080 x 2400, 60 Hz \
-    ro.infinity.camera=48MP + 8MP + 2MP + 2MP + 13MP
+    ro.product.marketname=Redmi Note 10
+    ro.infinity.soc=Snapdragon 678
+    ro.infinity.battery=5000 mAh
+    ro.infinity.display=1080 x 2400, 60 Hz
+    ro.infinity.camera=48MP+8MP+2MP+2MP+13MP
