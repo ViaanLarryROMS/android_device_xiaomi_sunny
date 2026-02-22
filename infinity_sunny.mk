@@ -37,9 +37,4 @@ TARGET_HAS_UDFPS := false
 # Whether Including Google Apps
 WITH_GAPPS := true
 
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.product.marketname=Redmi Note 10
-    ro.infinity.soc=Snapdragon 678
-    ro.infinity.battery=5000 mAh
-    ro.infinity.display=1080 x 2400, 60 Hz
-    ro.infinity.camera=48MP+8MP+2MP+2MP+13MP
+PRODUCT_SYSTEM_PROPERTIES += $(LOCAL_PATH)/system.prop
