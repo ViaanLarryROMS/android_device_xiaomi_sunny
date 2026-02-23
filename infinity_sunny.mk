@@ -13,6 +13,10 @@ $(call inherit-product, device/xiaomi/sunny/device.mk)
 
 # Inherit some common Project InfinityX stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# Include Dolby Atmos
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
