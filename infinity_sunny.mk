@@ -32,7 +32,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 INFINITY_BUILD_TYPE := OFFICIAL
 
 # Maintainer Name
-INFINITY_MAINTAINER := "Viaan"
+INFINITY_MAINTAINER := "Viaan_Thakur"
 
 # Whether the device supports Fingerprint On Display
 TARGET_HAS_UDFPS := false
@@ -40,4 +40,7 @@ TARGET_HAS_UDFPS := false
 # Whether Including Google Apps
 WITH_GAPPS := true
 
-PRODUCT_SYSTEM_PROPERTIES += $(LOCAL_PATH)/system.prop
+PRODUCT_SYSTEM_PROPERTIES += 
+ro.product.marketname=Redmi_Note_10
+ro.infinity.soc=Snapdragon™_678
+ro.infinity.camera=48MP+8MP+2MP+2MP+13MP
