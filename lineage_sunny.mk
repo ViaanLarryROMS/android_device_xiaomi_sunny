@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sunny/device.mk)
 
 # Inherit some common Project InfinityX stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Include Dolby Atmos
 $(call inherit-product, hardware/dolby/dolby.mk)
@@ -32,19 +32,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# HEHE
-INFINITY_BUILD_TYPE := OFFICIAL
+# Camera information (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 48,8,2,2
+AXION_CAMERA_FRONT_INFO := 13
 
-# Maintainer Name
-INFINITY_MAINTAINER := "Viaan_Thakur"
+# Maintainer name (underscores become spaces in the UI)
+AXION_MAINTAINER := Viaan_Thakur
 
-# Whether the device supports Fingerprint On Display
-TARGET_HAS_UDFPS := false
-
-# Whether Including Google Apps
-WITH_GAPPS := true
-
-PRODUCT_SYSTEM_PROPERTIES += 
-ro.product.marketname=Redmi_Note_10
-ro.infinity.soc=Snapdragon™_678
-ro.infinity.camera=48MP+8MP+2MP+2MP+13MP
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Qualcomm_Snapdragon_678
