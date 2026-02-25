@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sunny/device.mk)
 
 # Inherit some common Project InfinityX stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 # Include Dolby Atmos
 $(call inherit-product, hardware/dolby/dolby.mk)
@@ -20,7 +20,7 @@ $(call inherit-product, hardware/dolby/dolby.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_sunny
+PRODUCT_NAME := clover_sunny
 PRODUCT_DEVICE := sunny
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2101K7AG
@@ -32,19 +32,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# HEHE
-INFINITY_BUILD_TYPE := OFFICIAL
-
-# Maintainer Name
-INFINITY_MAINTAINER := "Viaan_Thakur"
-
-# Whether the device supports Fingerprint On Display
-TARGET_HAS_UDFPS := false
-
-# Whether Including Google Apps
-WITH_GAPPS := true
-
-PRODUCT_SYSTEM_PROPERTIES += 
-ro.product.marketname=Redmi_Note_10
-ro.infinity.soc=Snapdragon™_678
-ro.infinity.camera=48MP+8MP+2MP+2MP+13MP
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+CLOVER_BUILDTYPE := UNOFFICIAL
+CLOVER_MAINTAINER := Viaan_Thakur
+TARGET_FACE_UNLOCK_SUPPORTED := true
+USE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
