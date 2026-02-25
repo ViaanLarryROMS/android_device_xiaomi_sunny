@@ -12,10 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sunny/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-#Inherit Some GAPPS Stuff
-$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+$(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
@@ -26,6 +23,15 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2101K7AG
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_SYSTEM_NAME := sunny
+
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+CLOVER_BUILDTYPE := UNOFFICIAL
+CLOVER_MAINTAINER := Viaan_Thakur
+TARGET_FACE_UNLOCK_SUPPORTED := true
+USE_PIXEL_CHARGER := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=$(PRODUCT_SYSTEM_NAME)
