@@ -36,7 +36,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 INFINITY_BUILD_TYPE := OFFICIAL
 
 # Maintainer Name
-INFINITY_MAINTAINER := "Viaan_Thakur"
+INFINITY_MAINTAINER := "Viaan Thakur"
 
 # Whether the device supports Fingerprint On Display
 TARGET_HAS_UDFPS := false
