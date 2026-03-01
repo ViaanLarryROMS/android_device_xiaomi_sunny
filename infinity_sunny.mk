@@ -43,8 +43,3 @@ TARGET_HAS_UDFPS := false
 
 # Whether Including Google Apps
 WITH_GAPPS := true
-
-PRODUCT_SYSTEM_PROPERTIES += 
-ro.product.marketname=Redmi Note 10
-ro.infinity.soc=Qualcomm® Snapdragon™ 678
-ro.infinity.camera=48MP+8MP+2MP+2MP+13MP
