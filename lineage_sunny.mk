@@ -17,6 +17,9 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 # Include Dolby Atmos
 $(call inherit-product, hardware/dolby/dolby.mk)
 
+# Inherit Some GAPPS Stuff
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
