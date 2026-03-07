@@ -22,6 +22,9 @@ $(call inherit-product, hardware/dolby/dolby.mk)
 # Call the Leica Camera setup
 $(call inherit-product-if-exists, vendor/xiaomi/mojito-leicacamera/mojito-leicacamera-vendor.mk)
 
+# Include GSI keys
+ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+ 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
