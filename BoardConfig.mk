@@ -13,6 +13,9 @@ include vendor/xiaomi/sunny/BoardConfigVendor.mk
 # Inherit from proprietary files for Leica Camera
 -include vendor/xiaomi/mojito-leicacamera/BoardConfigVendor.mk
 
+BUILD_BROKEN_DUP_RULES := true
++BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 # A/B
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
