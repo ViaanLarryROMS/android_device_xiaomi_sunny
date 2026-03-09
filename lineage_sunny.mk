@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The PixelExperience Project
+# Copyright (C) 2026 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,16 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sunny device
 $(call inherit-product, device/xiaomi/sunny/device.mk)
 
-# Inherit some common Project InfinityX stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Include Dolby Atmos
 $(call inherit-product, hardware/dolby/dolby.mk)
 
-TARGET_BOOT_ANIMATION_RES := 1080
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := infinity_sunny
+PRODUCT_NAME := lineage_sunny
 PRODUCT_DEVICE := sunny
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2101K7AG
@@ -32,14 +30,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# HEHE
-INFINITY_BUILD_TYPE := UNOFFICIAL
-
-# Maintainer Name
-INFINITY_MAINTAINER := "Viaan_Thakur"
-
-# Whether the device supports Fingerprint On Display
-TARGET_HAS_UDFPS := false
-
-# Whether Including Google Apps
-WITH_GAPPS := true
+LUNARIS_BUILD_TYPE := UNOFFICIAL
+WITH_GMS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTED_REFRESH_RATES := 60
