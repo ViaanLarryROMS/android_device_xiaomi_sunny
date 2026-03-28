@@ -18,6 +18,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Include Dolby Atmos
 $(call inherit-product, hardware/dolby/dolby.mk)
+
+# Include GCAM
+$(call inherit-product, vendor/gcam/gcam-vendor.mk)
  
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
