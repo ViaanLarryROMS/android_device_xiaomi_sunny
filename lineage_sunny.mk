@@ -42,4 +42,4 @@ AXION_CAMERA_FRONT_INFO := 13
 AXION_MAINTAINER := Viaan_Thakur
 
 # Processor name (underscores become spaces)
-AXION_PROCESSOR := Qualcomm® Snapdragon™ 678
+AXION_PROCESSOR := Qualcomm®_Snapdragon™_678
